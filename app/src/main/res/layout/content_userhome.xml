@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_userhome"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.android.mainssms.Userhome"
+    tools:showIn="@layout/app_bar_userhome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/events"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Hello World"
+            android:layout_weight="2"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border">
+                    <ImageView
+                        android:id="@+id/accid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/account1"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5sp"
+                        android:layout_weight="0.9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/Account_link"
+                        android:layout_height="0dp"
+                        android:text="Accounts"
+                        android:layout_weight="0.1"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border">
+                    <ImageView
+                        android:id="@+id/grievid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:src="@drawable/grievance"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5sp"
+                        android:layout_weight="0.9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:id="@+id/grievance_link"
+                        android:layout_height="0dp"
+                        android:text="Grievance"
+                        android:layout_weight="0.1"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border">
+
+                        <ImageView
+                            android:id="@+id/serviceid"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:src="@drawable/services1"
+                            android:scaleType="centerCrop"
+                            android:layout_margin="5sp"
+                            android:layout_weight="0.9"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_below="@+id/img_1"
+                            android:layout_height="0dp"
+                            android:id="@+id/services_link"
+                            android:text="Services"
+                            android:gravity="center"
+                            android:layout_weight="0.1"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/border">
+                    <ImageView
+                        android:id="@+id/parkingid"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:scaleType="centerCrop"
+                        android:layout_margin="5sp"
+                        android:src="@drawable/parking1"
+                        android:layout_weight="0.9"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:id="@+id/payment_link"
+                        android:text="Parking"
+                        android:layout_weight="0.1"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
